@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Hobbies</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+   <title>Hobbies</title>
+<style>
+body {
+	background-image: url("images/background.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	font-family: "Lobster", sans-serif;
+}
+
+.logo {
+	max-width: 100%;
+	height: auto;
+	color:  #153903;
+}
+
+.nav-links {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	margin: 0 15px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	background: transparent;
+	padding: 5px 20px;
+	transition: color 0.3s ease;
+	color: #153903;
+}
+
+.nav-links a:hover {
+	background-color: #91BE7A;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+
+.btn { 
+	border-radius: 20px;
+	padding: 5px 20px;
+	color: #153903;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Lobster", sans-serif;
+}
+
+.btn:hover {
+	background-color: #91BE7A;
+}
+
+.dropbtn {
+	background: transparent;
+	color: #153903;
+	padding: 5px 20px;
+	font-size: 16px;
+	border-radius: 20px;
+	font-family: "Lobster", sans-serif;
+}
+
+.dropbtn:hover{
+	background-color: #91BE7A;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #04AA6D;
+	min-width: 120px;
+}
+
+.dropdown-content a {
+	color: #153903;
+	padding: 5px 20px;
+	text-decoration: none;
+	display: block;
+	border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+	background-color: #91BE7A;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px #fff;
+	background: transparent;
+	transition: 0.4 ease;
+	text-align: center;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.dm-serif-display-regular {
+	font-family: "DM Serif Display", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+	font-family: "DM Serif Display", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.main {
+	max-width: 1000px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 10px;
+	font-family: Lobster, sans-serif;
+	color: #153903;
+}
+
+h2 {
+	font-size: 2em;
+	margin-bottom: 20px;
+	font-family: Lobster, sans-serif;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.column {
+	max-width: 300px;
+	margin: 10px;
+	padding: 20px;
+	background-color: #399862;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	box-sizing: border-box;
+}
+
+.column img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.content {
+	color: #fff;
+	text-align: left;
+	font-family: DM Serif Display, sans-serif;
+}
+
+iframe {
+	margin-top: 20px;
+	width: 100%;
+	max-width: 560px;
+	height: 315px;
+}
+
+.text-below-video {
+	margin-top: 20px;
+	text-align: left;
+	color: #fff;
+	font-size: 18px;
+	border: 1px solid gray;
+	background-color: #399862;
+}
+
+#myBtn {
+	position: fixed; 
+	bottom: 0; 
+	right: 0; 
+	padding: 20px; 
+	background-color: transparent;
+	border-top-left-radius: 10px;
+	z-index: 999;
+	text-align: right;
+	font-family: Arial, sans-serif;
+	color: #153903;
+}
+
+#myBtn:hover {
+	background-color: transparent;
+}
+</style>
+</head>
+<body>
+
+   <header>
+       <div class="container">
+           <div class="logo">
+               <h2>HELLO! THIS IS MY BLOG</h2>
+           </div>
+           <nav>
+               <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about me.html">About Me</a></li>
+                   <li><a href="education.html">Education</a></li>
+                   <li><a href="friends.html">Friends</a></li>
+                   <li><a href="hobbies.html">Hobbies</a></li>
+                   <li class="dropdown">
+                       <button class="dropbtn">Lovely Family</button>
+                       <div class="dropdown-content">
+                           <a href="parent.html">Parent💚</a>
+                           <a href="first sister.html">First Sister💚</a>
+                           <a href="second sister.html">Second Sister💚</a>
+                           <a href="third sister.html">Third Sister💚</a>
+                           <a href="brother.html">Brother💚</a>
+                       </div>
+                   </li>
+               </ul>
+           </nav>
+           <div class="menu-toggle">
+               <i class="fas fa-bars"></i>
+           </div>
+       </div>
+   </header>
+
+   <div class="main">
+       <h1>HOBBIES</h1>
+
+       <div class="row">
+           <div class="column">
+               <div class="content">
+                   <img src="images/book1.jpg" alt="Books">
+                   <h3>Novel</h3>
+                   <p>I love reading novels, romance, mystery, action is my favorite genre.</p>
+           </div>
+       </div>
+
+       <div class="column">
+           <div class="content">
+               <img src="images/book2.jpg" alt="Books">
+               <h3>Novel</h3>
+               <p>I love to buy novels but novels are quite expensive so I can't buy many novels.</p>
+           </div>
+       </div>
+
+       <div class="column">
+           <div class="content">
+               <img src="images/book3.jpg" alt="Books">
+               <h3>Novel</h3>
+               <p>I also love collecting special edition or limited edition novels.</p>
+           </div>
+       </div>
+
+       <div class="column">
+           <div class="content">
+               <img src="images/knit1.jpg" alt="Knitting Hook Set">
+               <h3>Knit</h3>
+               <p>This is a knitting or crochet hook set .</p>
+           </div>
+       </div>
+
+       <div class="column">
+           <div class="content">
+               <img src="images/knit2.jpg" alt="Knitting Yarn">
+               <h3>Knit</h3>
+               <p>This is the yarn for the knitting or crochet.</p>
+           </div>
+       </div>
+
+       <div class="column">
+          <div class="content">
+               <img src="images/knit3.jpg" alt="Fingerless Glove">
+               <h3>Knit</h3>
+               <p>My first time knitting a fingerless glove for fun.</p>
+           </div>
+       </div>
+
+       <div class="column">
+           <div class="content">
+               <img src="images/knit4.jpg" alt="Sprout for headphone">
+               <h3>Knit</h3>
+               <p>Sprout for headphone.</p>
+           </div>
+       </div>
+
+       <div class="column">
+           <div class="content">
+               <img src="images/favorite1.jpg" alt="Entertainment">
+               <h3>Entertainment</h3>
+               <p>I love watching movies, dramas, anime, and also listening to music.</p>
+           </div>
+       </div>
+
+       <div class="column">
+           <div class="content">
+               <img src="images/favorite2.jpg" alt="Games">
+               <h3>Games</h3>
+               <p>I play games when I feel bored and also when I am stressed doing assignments.</p>
+           </div>
+       </div>
+   </div>
+
+   <iframe src="https://www.youtube.com/embed/ajqQW1v_3RM?si=3VdSIgpzLTIVOxwX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="text-below-video">
+           <center><h3>About the Video</h3></center>
+           <center<p>This YouTube video is about how to knit a fingerless glove just like the picture above. I used this tutorial video to make the glove myself and I made it.</center></p>
+       </div>
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/jbMKDhgx4eM?si=zRm4c_wRQfOdz0s0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <div class="text-below-video">
+           <center><h3>About the Video</h3></center>
+           <center<p>This YouTube video is about how to knit a sprout for headphones just like the picture above. This sprout was viral about a year ago and I made it.</center></p>
+</div>
+
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+   <script>
+       document.querySelector('.menu-toggle').addEventListener('click', function() {
+           document.querySelector('.nav-links').classList.toggle('active');
+       });
+       document.querySelector('.dropbtn').addEventListener('click', function() {
+           document.querySelector('.dropdown-content').classList.toggle('show');
+       });
+
+       window.onclick = function(event) {
+           if (!event.target.matches('.dropbtn')) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               for (var i = 0; i < dropdowns.length; i++) {
+                   var openDropdown = dropdowns[i];
+                   if (openDropdown.classList.contains('show')) {
+                       openDropdown.classList.remove('show');
+                   }
+               }
+           }
+       }
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+   </script>
+</body>
+</html>

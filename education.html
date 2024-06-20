@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Education</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+	background-image: url("images/background.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	font-family: "Lobster", sans-serif;
+}
+
+.logo {
+	max-width: 100%;
+	height: auto;
+	color:  #153903;
+}
+
+.nav-links {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	margin: 0 15px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	background: transparent;
+	padding: 5px 20px;
+	transition: color 0.3s ease;
+	color: #153903;
+}
+
+.nav-links a:hover {
+	background-color: #91BE7A;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+
+.btn { 
+	border-radius: 20px;
+	padding: 5px 20px;
+	color: #153903;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Lobster", sans-serif;
+}
+
+.btn:hover {
+	background-color: #91BE7A;
+}
+
+.dropbtn {
+	background: transparent;
+	color: #153903;
+	padding: 5px 20px;
+	font-size: 16px;
+	border-radius: 20px;
+	font-family: "Lobster", sans-serif;
+}
+
+.dropbtn:hover{
+	background-color: #91BE7A;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #04AA6D;
+	min-width: 120px;
+}
+
+.dropdown-content a {
+	color: #153903;
+	padding: 5px 20px;
+	text-decoration: none;
+	display: block;
+	border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+	background-color: #91BE7A;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px #fff;
+	background: transparent;
+	transition: 0.4 ease;
+	text-align: center;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+	flex-direction: column;
+	align-items: flex-start;
+   }
+
+   .nav-links {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+   }
+
+   .nav-links.active {
+	display: flex;
+   }
+
+   .menu-toggle {
+	display: block;
+	cursor: pointer;
+	color: #333;
+	font-size: 24px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .nav-links {
+       display: none;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+   }
+
+   .nav-links.active {
+       display: flex;
+   }
+
+   .menu-toggle {
+       display: block;
+       cursor: pointer;
+       color: #333;
+       font-size: 24px;
+   }
+}
+
+.text-box {
+	color: #153903;
+	text-align: center;
+}
+
+.text-box h2 {
+	font-size: 40px;
+	font-family: "Lobster", sans-serif;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.education {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.education::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.container {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+.container::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	border: 4px solid #FF9F55;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	left: 50%;
+}
+
+.left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid white;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent white;
+}
+
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid white;
+  	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+}
+
+.right::after {
+	left: -16px;
+}
+
+.content {
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+	left: 31px;
+  }
+  
+  .container {
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 30px;
+  }
+
+  .container::before {
+	left: 60px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+	left: 20px;
+  }
+
+  .right {
+	left: 0%;
+  }
+}
+
+#myBtn {
+	position: fixed; 
+	bottom: 0; 
+	right: 0; 
+	padding: 20px; 
+	background-color: transparent;
+	border-top-left-radius: 10px;
+	z-index: 999;
+	text-align: right;
+	font-family: Arial, sans-serif;
+	color: #153903;
+}
+
+#myBtn:hover {
+	background-color: transparent;
+}
+</style>
+</head>
+
+
+<body>
+
+   <header>
+       <div class="container">
+           <div class="logo">
+               <h2>HELLO! THIS IS MY BLOG</h2>
+           </div>
+           <nav>
+               <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about me.html">About Me</a></li>
+                   <li><a href="education.html">Education</a></li>
+                   <li><a href="friends.html">Friends</a></li>
+                   <li><a href="hobbies.html">Hobbies</a></li>
+                   <li class="dropdown">
+                       <button class="dropbtn">Lovely Family</button>
+                       <div class="dropdown-content">
+                           <a href="parent.html">Parent💚</a>
+                           <a href="first sister.html">First Sister💚</a>
+                           <a href="second sister.html">Second Sister💚</a>
+                           <a href="third sister.html">Third Sister💚</a>
+                           <a href="brother.html">Brother💚</a>
+                       </div>
+                   </li>
+               </ul>
+           </nav>
+           <div class="menu-toggle">
+               <i class="fas fa-bars"></i>
+           </div>
+       </div>
+   </header>
+
+   <div class="text-box">
+       <h2>EDUCATION</h2>
+   </div>
+
+   <div class="education">
+       <div class="container left">
+           <div class="content">
+               <center><img src="images/skkp.jpg" alt="school" width="200" height="200"></center>
+               <h2>UPSR 2016</h2>
+               <p>I take UPSR (Ujian Pencapaian Sekolah Rendah) in 2016 at Sekolah Kebangsaan Kuala Pegang.</p>
+           </div>
+       </div>
+
+       <div class="container right">
+           <div class="content">
+               <center><img src="images/smkkp.jpg" alt="school" width="200" height="200"></center>
+               <h2>PT3 2019</h2>
+               <p>I take PT3 (Pentaksiran Tingkatan Tiga) in 2019 at Sekolah Menengah Kebangsaan Kuala Pegang.</p>
+           </div>
+       </div>
+
+       <div class="container left">
+           <div class="content">
+               <center><img src="images/smkkp.jpg" alt="school" width="200" height="200"></center>
+               <h2>SPM 2022</h2>
+               <p>I take SPM (Sijil Pelajaran Malaysia) in 2022 also at Sekolah Menengah Kebangsaan Kuala Pegang.</p>
+           </div>
+       </div>
+
+       <div class="container right">
+           <div class="content">
+               <center><img src="images/uitmkedah.jpg" alt="school" width="200" height="200"></center>
+               <h2>Diploma 2023/2024</h2>
+               <p> I continue studying at Universiti Teknologi Mara (UiTM) Merbok, in Diploma of Library Informatics</p>
+           </div>
+       </div>
+   </div>
+
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+   <script>
+       document.querySelector('.menu-toggle').addEventListener('click', function() {
+           document.querySelector('.nav-links').classList.toggle('active');
+       });
+       document.querySelector('.dropbtn').addEventListener('click', function() {
+           document.querySelector('.dropdown-content').classList.toggle('show');
+       });
+
+       window.onclick = function(event) {
+           if (!event.target.matches('.dropbtn')) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               for (var i = 0; i < dropdowns.length; i++) {
+                   var openDropdown = dropdowns[i];
+                   if (openDropdown.classList.contains('show')) {
+                       openDropdown.classList.remove('show');
+                   }
+               }
+           }
+       }
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+   </script>
+</body>
+</html>

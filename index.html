@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Personal Website</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+	background-image: url("images/background.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	font-family: "Lobster", sans-serif;
+}
+
+.logo {
+	max-width: 100%;
+	height: auto;
+	color:  #153903;
+}
+
+.nav-links {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	margin: 0 15px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	background: transparent;
+	padding: 5px 20px;
+	transition: color 0.3s ease;
+	color: #153903;
+}
+
+.nav-links a:hover {
+	background-color: #91BE7A;
+	border-radius: 20px;
+	padding: 5px 20px;
+
+}
+
+.btn { 
+	border-radius: 20px;
+	padding: 5px 20px;
+	color: #153903;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Lobster", sans-serif;
+}
+
+.btn:hover {
+	background-color: #91BE7A;
+}
+
+.dropbtn {
+	background: transparent;
+	color: #153903;
+	padding: 5px 20px;
+	font-size: 16px;
+	border-radius: 20px;
+	font-family: "Lobster", sans-serif;
+}
+
+.dropbtn:hover{
+	background-color: #91BE7A;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #04AA6D;
+	min-width: 120px;
+      }
+
+.dropdown-content a {
+	color: #153903;
+	padding: 5px 20px;
+	text-decoration: none;
+	display: block;
+	border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+	background-color: #91BE7A;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px #fff;
+	background: transparent;
+	transition: 0.4 ease;
+	text-align: center;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+	flex-direction: column;
+	align-items: flex-start;
+   }
+
+   .nav-links {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+   }
+
+   .nav-links.active {
+	display: flex;
+   }
+
+   .menu-toggle {
+	display: block;
+	cursor: pointer;
+	color: #333;
+	font-size: 24px;
+   }
+}
+
+.mySlides {
+	display: none;
+}
+
+video {
+	width: 70%;
+	height: auto;
+	justify-content: center;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	top: 100px;
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.active {
+	background-color: #717171;
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+.wrapper {
+	margin: 120px auto;
+	width: 70%;
+}
+
+img {
+	width: 30%;
+	height: 30%;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.text-box {
+	color: black;
+	align-items: right;
+	bottom: 50px;
+	text-align: center;
+}
+
+.text-box p {
+	font-size: 30px;
+	font-family: "Caveat";
+}
+
+footer {
+	background: #111;
+	height: 5vw;
+	width: 100vw;
+	font-family: "Caveat";
+	padding-bottom: 5px;
+	color: #fff;
+	text-align: center;
+}
+
+.footer-bottom p {
+	font-size: 20px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer-bottom span {
+	font-weight: 200;
+	opacity: .4;
+	text-transform: uppercase;
+}
+</style>
+</head>
+
+<body>
+
+   <header>
+       <div class="container">
+           <div class="logo">
+               <h2>HELLO! THIS IS MY BLOG</h2>
+           </div>
+           <nav>
+               <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about me.html">About Me</a></li>
+                   <li><a href="education.html">Education</a></li>
+                   <li><a href="friends.html">Friends</a></li>
+                   <li><a href="hobbies.html">Hobbies</a></li>
+                   <li class="dropdown">
+                       <button class="dropbtn">Lovely Family</button>
+                       <div class="dropdown-content">
+                           <a href="parent.html">Parent💚</a>
+                           <a href="first sister.html">First Sister💚</a>
+                           <a href="second sister.html">Second Sister💚</a>
+                           <a href="third sister.html">Third Sister💚</a>
+                           <a href="brother.html">Brother💚</a>
+                       </div>
+                   </li>
+               </ul>
+           </nav>
+           <div class="menu-toggle">
+               <i class="fas fa-bars"></i>
+           </div>
+       </div>
+   </header>
+
+   <div class="slideshow-container">
+       <div class="mySlides fade" data-duration="28000">
+           <div class="numbertext">1 / 2</div>
+           <video autoplay muted loop>
+               <source src="videos/myself1.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+       </div>
+
+       <div class="mySlides fade" data-duration="10000">
+           <div class="numbertext">2 / 2</div>
+           <video autoplay muted loop>
+               <source src="videos/myself2.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+       </div>
+   </div>
+
+   <main>
+       <div class="wrapper">
+       <img src="images/family.jpg" alt="Family">
+       <img src="images/myself1.jpg" alt="A picture of me">
+       <img src="images/knit4.jpg" alt="Sprout for headphone">
+
+   <br>
+   <div class="text-box">
+       <h2>Hello! I'm Araa, Welcome to my personal website</h2>
+       <p>"The best way to predict your future is to create it." - Abraham LincoIn</p>
+       <p>"Believe you can and you're halfway there" - Theodore Roosevelt</p>
+   </div>
+   </main>
+
+   <footer>
+       <div class="footer-content">
+           <h3>Araa's Website</h3>
+       </div>               
+                
+       <div clas="footer-bottom">
+           <p>copyright &copy;2024 araa'swebsite. designed by <span>Rabiatul</span></p>
+       </div>               
+   </footer>
+
+   <script>
+       document.querySelector('.menu-toggle').addEventListener('click', function() {
+           document.querySelector('.nav-links').classList.toggle('active');
+       });
+       document.querySelector('.dropbtn').addEventListener('click', function() {
+           document.querySelector('.dropdown-content').classList.toggle('show');
+       });
+
+       window.onclick = function(event) {
+           if (!event.target.matches('.dropbtn')) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               for (var i = 0; i < dropdowns.length; i++) {
+                   var openDropdown = dropdowns[i];
+                   if (openDropdown.classList.contains('show')) {
+                       openDropdown.classList.remove('show');
+                   }
+               }
+           }
+       }
+
+       let slideIndex = 0;
+       let slides = document.getElementsByClassName("mySlides");
+       let slideTimeout;
+
+       showSlides();
+
+       function showSlides() {
+           let currentSlide = slides[slideIndex];
+           let duration = parseInt(currentSlide.getAttribute("data-duration"));
+           currentSlide.style.display = "block";  
+           updateDots();
+
+           // Advance to next slide after duration
+           slideTimeout = setTimeout(nextSlide, duration);
+       }
+
+       function nextSlide() {
+           slides[slideIndex].style.display = "none";
+           slideIndex++;
+           if (slideIndex >= slides.length) {
+               slideIndex = 0;
+           }
+           showSlides();
+       }
+
+       function updateDots() {
+           let dots = document.getElementsByClassName("dot");
+           for (let i = 0; i < dots.length; i++) {
+               dots[i].classList.remove("active");
+           }
+           dots[slideIndex].classList.add("active");
+       }
+   </script>
+
+</body>
+</html>

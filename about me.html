@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>About Me</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+	background-image: url("images/background.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	font-family: "Lobster", sans-serif;
+}
+
+.logo {
+	max-width: 100%;
+	height: auto;
+	color:  #153903;
+}
+
+.nav-links {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	margin: 0 15px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	background: transparent;
+	padding: 5px 20px;
+	transition: color 0.3s ease;
+	color: #153903;
+}
+
+.nav-links a:hover {
+	background-color: #91BE7A;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+
+.btn { 
+	border-radius: 20px;
+	padding: 5px 20px;
+	color: #153903;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Lobster", sans-serif;
+}
+
+.btn:hover {
+	background-color: #91BE7A;
+}
+
+.dropbtn {
+	background: transparent;
+	color: #153903;
+	padding: 5px 20px;
+	font-size: 16px;
+	border-radius: 20px;
+	font-family: "Lobster", sans-serif;
+}
+
+.dropbtn:hover{
+	background-color: #91BE7A;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #04AA6D;
+	min-width: 120px;
+}
+
+.dropdown-content a {
+	color: #153903;
+	padding: 5px 20px;
+	text-decoration: none;
+	display: block;
+	border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+	background-color: #91BE7A;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px #fff;
+	background: transparent;
+	transition: 0.4 ease;
+	text-align: center;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+	flex-direction: column;
+	align-items: flex-start;
+   }
+
+   .nav-links {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+   }
+
+   .nav-links.active {
+	display: flex;
+   }
+
+   .menu-toggle {
+	display: block;
+	cursor: pointer;
+	color: #333;
+	font-size: 24px;
+   }
+}
+
+.wrapper {
+	margin: 50px auto;
+	width: 70%;
+}
+
+img {
+	width: 30%;
+	height: 30%;
+	float: center;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.text-box {
+	border: 1px solid gray;
+	padding: 20px;
+	color: black;
+	background-color: #fff;
+}
+
+.text-box h2 {
+	font-size: 42px;
+	font-family: "Lobster";
+	color: #153903;
+}
+
+.text-box p {
+	font-size: 20px;
+	font-family: "Caveat";
+	letter-spacing: 3px;
+}
+
+</style>
+</head>
+
+<body>
+
+   <header>
+       <div class="container">
+           <div class="logo">
+               <h2>HELLO! THIS IS MY BLOG</h2>
+           </div>
+           <nav>
+               <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about me.html">About Me</a></li>
+                   <li><a href="education.html">Education</a></li>
+                   <li><a href="friends.html">Friends</a></li>
+                   <li><a href="hobbies.html">Hobbies</a></li>
+                   <li class="dropdown">
+                       <button class="dropbtn">Lovely Family</button>
+                       <div class="dropdown-content">
+                           <a href="parent.html">Parent💚</a>
+                           <a href="first sister.html">First Sister💚</a>
+                           <a href="second sister.html">Second Sister💚</a>
+                           <a href="third sister.html">Third Sister💚</a>
+                           <a href="brother.html">Brother💚</a>
+                       </div>
+                   </li>
+               </ul>
+           </nav>
+           <div class="menu-toggle">
+               <i class="fas fa-bars"></i>
+           </div>
+       </div>
+   </header>
+
+   <main>
+       <div class="wrapper">
+       <img src="images/myself1.jpg" alt="A picture of me">
+       <img src="images/myself.png" alt="A picture of me">
+       <img src="images/myself4.jpg" alt="Family picture">
+           <div class="text-box">
+               <h2>Hi! I'm Araa</h2>
+               <p>Name: Rabiatul Adawiyah Binti Sanusi</p>
+               <p>Age: 20</p>
+               <p>Birth Date: 30/11/2004</p>
+               <p>Birth Place: Hospital Jitra</p>
+
+               <p>Ara is my nickname for my friends in university. This is my first website. This website includes my personal information, my friend's information, hobbies and favorite things, and family. I was having a fun hard and stressful time making this website but I'm not going to lie it was worth it, I feel so happy with how this project turned out but it's a little bit confusing for me but I love to do it.</p>
+               <p>I was born in hospital Jitra, Kedah on 30 November 2004, and I was the last born. After I turned one year old, my family moved from Jitra to Baling still in Kedah but my current hometown is my mother's birth place. I have so many memories in this hometown and I love to live here but when I grow up I want to go outside from my hometown to experience life outside the village and the challenges to survive there.</p>
+           </div>
+       </div>
+   </main>
+
+   <script>
+       document.querySelector('.menu-toggle').addEventListener('click', function() {
+           document.querySelector('.nav-links').classList.toggle('active');
+       });
+       document.querySelector('.dropbtn').addEventListener('click', function() {
+           document.querySelector('.dropdown-content').classList.toggle('show');
+       });
+
+       window.onclick = function(event) {
+           if (!event.target.matches('.dropbtn')) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               for (var i = 0; i < dropdowns.length; i++) {
+                   var openDropdown = dropdowns[i];
+                   if (openDropdown.classList.contains('show')) {
+                       openDropdown.classList.remove('show');
+                   }
+               }
+           }
+       }
+   </script>
+
+</body>
+</html>
